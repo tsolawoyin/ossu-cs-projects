@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Platform Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2fec614d7c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>A Platform Game</h1>
+    <main id="game-frame"></main>
+    <!-- the reason why I am going to insert the controller here is that it doesn't change throughout the game -->
+    <!-- it remains fixed and constant -->
+    <div id="game-pad">
+      <i id="ArrowLeft" class="fa-solid fa-caret-left arrows"></i>
+      <i id="ArrowUp" class="fa-solid fa-caret-up arrows"></i>
+      <i id="ArrowRight" class="fa-solid fa-caret-right arrows"></i>
+    </div>
+
+    <!-- I will still have to display it properly, but I will leave that to later -->
+    <!-- all my code resides here in the source folder-->
+    <footer>
+      <p>
+        A 2D game by <a href="https://github.com/tsolawoyin">tsolawoyin</a> in
+        collab with <a href="https://github.com/marijnh">Marijn H.</a> Built with
+        HTML, CSS, and Vanilla JS. Source code on
+        <a href="https://github.com/tsolawoyin/a-platform-game">github</a>
+      </p>
+      <p>
+        Feel free to reach me @
+        <a href="mailto:solitary.wolf@outlook.com">solitary.wolf@outlook.com</a>
+      </p>
+
+      <!-- <a href="https://github.com/tsolawoyin/a-platform-game" class="icon"><i class="fa-brands fa-github"></i></a> -->
+      <!-- <i class="fa-solid fa-envelope"></i> -->
+
+      <p>
+        <i class="fa-solid fa-heart"></i> Proudly sponsored by
+        <strong>Boots</strong>
+      </p>
+    </footer>
+    <script src="./src/runGame.js" type="module"></script>
+  </body>
+</html>
