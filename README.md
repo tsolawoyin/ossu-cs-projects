@@ -26,5 +26,4 @@ I would like to thank the OSSU community for providing an excellent curriculum a
 
 In addition to the core OSSU curriculum, I have completed several supplementary courses to further enhance my knowledge and skills in various areas of computer science. The courses are listed below:
 
-- [Eloquent JavaScript](./Eloquent%20JavaScript/)
-- [Discrete Mathematics I](./Discrete%20Math%20I/)
+[In progress](#)
