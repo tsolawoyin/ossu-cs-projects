@@ -2,40 +2,39 @@
 import { Level } from "./level.js";
 import { State } from "./state.js";
 import { GAME_LEVELS } from "./plans.js";
-import { Display } from "./canvasDisplay.js";
+import { DOMDisplay, arrowKeys } from "./DOMDisplay.js";
+import { CanvasDisplay } from "./CanvasDisplay.js";
 
-function track(keys) {
-  // dir is more appropriate now...
-  // it can be touch or screen... no I don't get...
-  let down = Object.create(null);
+// function track(keys) {
+//   let down = Object.create(null);
 
-  const trackK = (event) => {
-    if (keys.includes(event.key)) {
-      down[event.key] = event.type == "keydown";
-      event.preventDefault();
-    }
-  };
+//   const trackK = (event) => {
+//     if (keys.includes(event.key)) {
+//       down[event.key] = event.type == "keydown";
+//       event.preventDefault();
+//     }
+//   };
 
-  function trackT(event) {
-    if (keys.includes(event.target.id)) {
-      down[event.target.id] = event.type == "touchstart";
-      event.preventDefault();
-    }
-  }
+//   function trackT(event) {
+//     if (keys.includes(event.target.id)) {
+//       down[event.target.id] = event.type == "touchstart";
+//       event.preventDefault();
+//     }
+//   }
 
-  window.addEventListener("keyup", trackK);
-  window.addEventListener("keydown", trackK);
-  window.addEventListener("touchstart", trackT, {
-    passive: false
-  });
-  window.addEventListener("touchend", trackT, {
-    passive: false
-  });
+//   window.addEventListener("keyup", trackK);
+//   window.addEventListener("keydown", trackK);
+//   window.addEventListener("touchstart", trackT, {
+//     passive: false
+//   });
+//   window.addEventListener("touchend", trackT, {
+//     passive: false
+//   });
 
-  return down;
-}
+//   return down;
+// }
 
-const arrowKeys = track(["ArrowLeft", "ArrowUp", "ArrowRight"]);
+// const arrowKeys = track(["ArrowLeft", "ArrowUp", "ArrowRight"]);
 
 
 function runAnimation(frameFunc) {
@@ -52,7 +51,7 @@ function runAnimation(frameFunc) {
 }
 
 function runLevel(level, Display) {
-  console.log(level)
+  // console.log(level)
   let state = State.start(level);
   let display = new Display(document.querySelector("main"), level);
   let ending = 1;
@@ -91,7 +90,7 @@ async function runGame(plans, Display) {
 // let display = new CanvasDisplay(document.querySelector("main"), simpleLevel);
 // // now we sync the state of the display
 // display.syncState(levelState);
-runGame(GAME_LEVELS, Display);
+runGame(GAME_LEVELS, CanvasDisplay);
 
 // there are quite a lot of things I am not quite getting in the game honestly
 // concepts like state is just getting clearer
