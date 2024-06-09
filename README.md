@@ -16,13 +16,11 @@ The repository is organized into folders of completed projects. Each project fol
 ### Credits
 
 I would like to thank the OSSU community for providing an excellent curriculum and the numerous open-source resources that made these projects possible. For more information about OSSU, visit their [official GitHub page](https://github.com/ossu/computer-science)
-### Completed Projects from Core Courses: 
+### Completed OSSU Projects: 
 - [6.0001 MITOCW_Introduction to Computer Science and Programming using Python](./6.0001-assignments-solutions/)
 - [Space Invaders](./Space%20Invaders/)
 
 
-### Completed Supplementary Courses:
-
-In addition to the core OSSU curriculum, I have completed several supplementary courses to further enhance my knowledge and skills in various areas of computer science. The courses are listed below:
+### Personal Completed Projects (non-OSSU):
 
 [In progress](#)
