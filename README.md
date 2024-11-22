@@ -25,3 +25,6 @@ I would like to thank the OSSU community for providing an excellent curriculum a
 ### Personal Projects (non-OSSU projects):
 
 <!-- [In progress](#) -->
+
+- [Network](./Network/)
+- [Robot](./Robot/)
